@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SjbjmsSe6nJDfaZgDvsCYhTwnTQMQbohusMLrdkSK0IwQj921QjIMKVkw9RA4qrLauMz9VkG6jyEfa1sF4ZmZA==",
+  "dgSpecHash": "ZneuB4AQZpzcKibCzw7sOZ41Z7yHsNPvaoPVNYdWdsE4UP64PDdRERAL2TLMRT6yDPcF5rY5EVnZCQsi657Krw==",
   "success": true,
-  "projectFilePath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso\\Espresso_SLN\\Espresso\\Espresso.csproj",
+  "projectFilePath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Espresso.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jackb\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\jackb\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

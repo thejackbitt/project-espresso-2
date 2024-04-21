@@ -32936,11 +32936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso\\Espresso_SLN\\Espresso\\Espresso.csproj",
+      "projectUniqueName": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Espresso.csproj",
       "projectName": "Espresso",
-      "projectPath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso\\Espresso_SLN\\Espresso\\Espresso.csproj",
+      "projectPath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Espresso.csproj",
       "packagesPath": "C:\\Users\\jackb\\.nuget\\packages\\",
-      "outputPath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso\\Espresso_SLN\\Espresso\\obj\\",
+      "outputPath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
