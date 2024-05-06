@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZneuB4AQZpzcKibCzw7sOZ41Z7yHsNPvaoPVNYdWdsE4UP64PDdRERAL2TLMRT6yDPcF5rY5EVnZCQsi657Krw==",
+  "dgSpecHash": "BKXIWJySeN8QLDUPccxvVtOzyJZBJJaqJI9WsSnHzk9ep8kO2pc35579YMlAxgATiqhpTVYsMQUw1JZm0Hoo5w==",
   "success": true,
   "projectFilePath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Espresso.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jackb\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\jackb\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\jackb\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\jackb\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

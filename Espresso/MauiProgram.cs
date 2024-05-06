@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Espresso.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace Espresso
 {
@@ -15,9 +16,8 @@ namespace Espresso
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
-    		builder.Logging.AddDebug();
-#endif
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainViewModel>();
 
             return builder.Build();
         }

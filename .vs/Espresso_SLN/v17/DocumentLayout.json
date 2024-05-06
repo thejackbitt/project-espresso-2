@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,22 +24,9 @@
               "RelativeDocumentMoniker": "Espresso\\MainPage.xaml",
               "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml",
               "RelativeToolTip": "Espresso\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-21T22:32:00.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Espresso\\MainPage.xaml.cs",
-              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml.cs",
-              "RelativeToolTip": "Espresso\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T22:43:49.476Z",
+              "WhenOpened": "2024-05-06T20:21:36.054Z",
               "EditorCaption": ""
             }
           ]
