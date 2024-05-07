@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Espresso.DetailPage"
              xmlns:viewmodel="clr-namespace:Espresso.ViewModel"
-             x:DataType="viewmodel:DetailViewModel"
-             Title="DetailPage">
+             x:DataType="viewmodel:DetailViewModel">
     <VerticalStackLayout>
         <Label 
             Text="{Binding Path=Text, StringFormat='Welcome to {0}'}"
