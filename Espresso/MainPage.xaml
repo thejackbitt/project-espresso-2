@@ -12,11 +12,12 @@
           ColumnSpacing="10">
 
         <Image Grid.ColumnSpan="2"
-               Source="dotnet_bot.png"
-               BackgroundColor="Transparent"/>
+               Source="coffee_cup_mascot.png"
+               BackgroundColor="#00FFFFFF"/>
 
         <Entry  Placeholder="Enter task"
                 Grid.Row="1"
+                FontFamily="W95FA"
                 Text="{Binding Text}"/>
 
         <Button Text="Add"
@@ -62,7 +63,9 @@
                         <SwipeView.RightItems>
                             <SwipeItems>
                                 <SwipeItem Text="Delete"
-                                           BackgroundColor="Red"/>
+                                           BackgroundColor="Red"
+                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=DeleteCommand}"
+                                           CommandParameter="{Binding .}"/>
                             </SwipeItems>                            
                         </SwipeView.RightItems>
                         <Grid Padding="0,5">
