@@ -39,4 +39,14 @@ namespace Espresso.ViewModel;
         }
     }
 
+    [RelayCommand]
+    async Task Tap(string s)
+    {
+        await Shell.Current.GoToAsync($"{nameof(DetailPage)}?id={s}",
+            new Dictionary<string, object>
+            {
+                {nameof(DetailPage), s },
+            });
+    }
+
     }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Espresso.DetailPage"
+             xmlns:viewmodel="clr-namespace:Espresso.ViewModel"
+             x:DataType="viewmodel:DetailViewModel"
+             Title="DetailPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Path=Text, StringFormat='Welcome to {0}'}"
+            VerticalOptions="Center" 
+            FontFamily="W95FA"
+            HorizontalOptions="Center" />
+        <Button Text="Go Back"
+                Command="{Binding GoBackCommand}"
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="#C0C0C0"
+                BorderColor="Black"
+                BorderWidth="2"
+                CornerRadius="0"
+                FontFamily="W95FA"
+                TextColor="Black">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroupList>
+                    <VisualStateGroup Name="CommonStates">
+                        <VisualState Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#C0C0C0"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState Name="PointerOver">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#E0E0E0"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState Name="Pressed">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#808080"/>
+                                <Setter Property="TextColor" Value="White"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </VisualStateManager.VisualStateGroups>
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>
