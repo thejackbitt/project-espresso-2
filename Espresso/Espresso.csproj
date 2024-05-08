@@ -44,13 +44,13 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
 
 		<!-- Splash Screen -->
-		<!-- <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#236f70" BaseSize="128,128" />
-		-->
+		<!-- <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#236f70" BaseSize="128,128" />-->
 		<MauiSplashScreen Include="Resources\Images\coffee_cup_splash.png" Color="#236f70" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\coffee_cup_mascot.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Images\hamburger.png" Resize="True" BaseSize="32,32" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -62,11 +62,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Fonts\W95FA.otf" />
-	  <None Remove="Resources\Images\coffee_cup_mascot.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
@@ -74,15 +69,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="DetailPage.xaml.cs">
-	    <DependentUpon>DetailPage.xaml</DependentUpon>
-	  </Compile>
+	  <MauiXaml Update="Base.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="DetailPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  <Folder Include="ViewModel\" />
 	</ItemGroup>
 
 </Project>

@@ -1,12 +1,12 @@
-﻿namespace Espresso
+﻿using System.Windows.Input;
+
+namespace Espresso
 {
     public partial class AppShell : Shell
     {
         public AppShell()
         {
             InitializeComponent();
-
-            Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
         }
     }
 }

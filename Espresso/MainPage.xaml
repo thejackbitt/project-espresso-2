@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<local:Base xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Espresso.MainPage"
-             xmlns:viewmodel="clr-namespace:Espresso.ViewModel"
-             x:DataType="viewmodel:MainViewModel">
+             xmlns:local="clr-namespace:Espresso"
+             x:Class="Espresso.MainPage">
 
     <Grid RowDefinitions="100, Auto, *"
           ColumnDefinitions=".75*, .25*"
@@ -33,61 +32,27 @@
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroupList>
                     <VisualStateGroup Name="CommonStates">
-                    <VisualState Name="Normal">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#C0C0C0"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState Name="PointerOver">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#E0E0E0"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState Name="Pressed">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#808080"/>
-                            <Setter Property="TextColor" Value="White"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                </VisualStateGroup>
-               </VisualStateGroupList>
+                        <VisualState Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#C0C0C0"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState Name="PointerOver">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#E0E0E0"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState Name="Pressed">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#808080"/>
+                                <Setter Property="TextColor" Value="White"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
             </VisualStateManager.VisualStateGroups>
         </Button>
 
-        <CollectionView Grid.Row="2"
-                        Grid.ColumnSpan="2"
-                        ItemsSource="{Binding Items}"
-                        SelectionMode="None">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="{x:Type x:String}">
-                    <SwipeView>
-                        <SwipeView.RightItems>
-                            <SwipeItems>
-                                <SwipeItem Text="Delete"
-                                           BackgroundColor="Red"
-                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=DeleteCommand}"
-                                           CommandParameter="{Binding .}"/>
-                            </SwipeItems>                            
-                        </SwipeView.RightItems>
-                        <Grid Padding="0,5">
-                            <Frame>
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer 
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=TapCommand}"
-                                        CommandParameter="{Binding .}">
-                                    </TapGestureRecognizer>
-                                </Frame.GestureRecognizers>
-                                <Label Text="{Binding .}"
-                                       FontSize="24"
-                                       FontFamily="W95FA"/>
-                            </Frame>
-                        </Grid>
-                    </SwipeView>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-
-        </CollectionView>
-
     </Grid>
 
-</ContentPage>
+</local:Base>

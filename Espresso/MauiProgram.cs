@@ -1,5 +1,4 @@
-﻿using Espresso.ViewModel;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 namespace Espresso
 {
@@ -16,11 +15,6 @@ namespace Espresso
                 });
 
             builder.Services.AddSingleton<MainPage>();
-            builder.Services.AddSingleton<MainViewModel>();
-
-
-            builder.Services.AddTransient<DetailPage>();
-            builder.Services.AddTransient<DetailViewModel>();
 
             return builder.Build();
         }

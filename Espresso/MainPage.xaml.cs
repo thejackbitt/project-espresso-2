@@ -1,15 +1,11 @@
-﻿using Espresso.ViewModel;
-
-namespace Espresso
+﻿namespace Espresso
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : Base
     {
-
-        public MainPage(MainViewModel vm)
+        public MainPage()
         {
             InitializeComponent();
-            BindingContext = vm;
         }
     }
-
 }
+
