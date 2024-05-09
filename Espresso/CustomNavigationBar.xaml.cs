@@ -78,10 +78,13 @@ namespace Espresso
         {
             if (!IsProfileVisible)
             {
+                var rotateIcon = borger.RotateTo(0, 250, Easing.CubicInOut);
+                IsMenuVisible = false;
+                menuPanel.IsVisible = false;
                 IsProfileVisible = true;
                 profilePanel.IsVisible = true;
                 var translateAnimation = profilePanel.TranslateTo(0, 0, 350, Easing.CubicInOut);
-                var heightAnimation = profilePanel.AnimateProperty(height => profilePanel.HeightRequest = height, -200, 300, 150, Easing.CubicInOut);
+                var heightAnimation = profilePanel.AnimateProperty(height => profilePanel.HeightRequest = height, -200, 340, 150, Easing.CubicInOut);
                 await Task.WhenAll(translateAnimation, heightAnimation);
             }
             else

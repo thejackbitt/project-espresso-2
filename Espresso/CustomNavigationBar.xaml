@@ -55,9 +55,10 @@
                    WidthRequest="120"
                    HeightRequest="120"/>
             <Label Text="Foo Fighter"
+                   FontSize="Medium"
                    Margin="20,5"/>
             <Label Text="foo@bar.com" 
-                   Margin="20,5"/>
+                   Margin="20,20"/>
             <Label Text="Enable/Disable Notifications" 
                    Margin="20,5"/>
             <Button Text="Sign Out" 
