@@ -64,6 +64,10 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\W95FA.otf" />
 	  <None Remove="Resources\Images\coffee_cup_mascot.png" />
+	  <None Remove="Resources\Images\hamburger.png" />
+	  <None Remove="Resources\Images\modify_black.png" />
+	  <None Remove="Resources\Images\modify_white.png" />
+	  <None Remove="Resources\Images\profile.png" />
 	</ItemGroup>
 
 	<ItemGroup>

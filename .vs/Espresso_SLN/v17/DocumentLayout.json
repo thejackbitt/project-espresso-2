@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\espresso.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\espresso.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\customnavigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\customnavigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\customnavigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\customnavigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\espresso.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\espresso.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,63 +50,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Espresso\\MainPage.xaml.cs",
-              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml.cs",
-              "RelativeToolTip": "Espresso\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T01:58:35.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomNavigationBar.xaml.cs",
-              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml.cs",
-              "RelativeDocumentMoniker": "Espresso\\CustomNavigationBar.xaml.cs",
-              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml.cs",
-              "RelativeToolTip": "Espresso\\CustomNavigationBar.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T01:57:44.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "Espresso\\ViewModel\\MainViewModel.cs",
               "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "Espresso\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T01:55:12.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "CustomNavigationBar.xaml",
               "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml",
               "RelativeDocumentMoniker": "Espresso\\CustomNavigationBar.xaml",
               "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml",
               "RelativeToolTip": "Espresso\\CustomNavigationBar.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-09T01:50:49.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Espresso.csproj",
               "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Espresso.csproj",
               "RelativeDocumentMoniker": "Espresso\\Espresso.csproj",
@@ -115,19 +89,6 @@
               "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-05-06T20:28:06.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "Espresso\\MauiProgram.cs",
-              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MauiProgram.cs",
-              "RelativeToolTip": "Espresso\\MauiProgram.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T22:14:34.215Z",
               "EditorCaption": ""
             },
             {
@@ -145,20 +106,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml",
               "RelativeDocumentMoniker": "Espresso\\MainPage.xaml",
               "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml",
               "RelativeToolTip": "Espresso\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-06T20:21:36.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "Espresso\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "Espresso\\Resources\\Styles\\Colors.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-09T01:32:46.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomNavigationBar.xaml.cs",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml.cs",
+              "RelativeDocumentMoniker": "Espresso\\CustomNavigationBar.xaml.cs",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml.cs",
+              "RelativeToolTip": "Espresso\\CustomNavigationBar.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T01:57:44.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Espresso\\MauiProgram.cs",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MauiProgram.cs",
+              "RelativeToolTip": "Espresso\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T22:14:34.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Espresso\\MainPage.xaml.cs",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml.cs",
+              "RelativeToolTip": "Espresso\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T01:58:35.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "App.xaml",
               "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\App.xaml",
               "RelativeDocumentMoniker": "Espresso\\App.xaml",
@@ -167,19 +180,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-06T22:14:18.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Colors.xaml",
-              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Resources\\Styles\\Colors.xaml",
-              "RelativeDocumentMoniker": "Espresso\\Resources\\Styles\\Colors.xaml",
-              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Resources\\Styles\\Colors.xaml",
-              "RelativeToolTip": "Espresso\\Resources\\Styles\\Colors.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-09T01:32:46.439Z",
               "EditorCaption": ""
             }
           ]

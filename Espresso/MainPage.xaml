@@ -27,35 +27,7 @@
         <Button Text="Add"
         Command="{Binding AddCommand}"
         Grid.Row="1"
-        Grid.Column="1"
-        BackgroundColor="#C0C0C0"
-        BorderColor="Black"
-        BorderWidth="2"
-        CornerRadius="0"
-        FontFamily="W95FA"
-        TextColor="Black">
-            <VisualStateManager.VisualStateGroups>
-                <VisualStateGroupList>
-                    <VisualStateGroup Name="CommonStates">
-                    <VisualState Name="Normal">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#C0C0C0"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState Name="PointerOver">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#E0E0E0"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState Name="Pressed">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#808080"/>
-                            <Setter Property="TextColor" Value="White"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                </VisualStateGroup>
-               </VisualStateGroupList>
-            </VisualStateManager.VisualStateGroups>
+        Grid.Column="1">
         </Button>
 
         <CollectionView Grid.Row="2"
