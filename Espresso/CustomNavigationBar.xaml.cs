@@ -39,12 +39,14 @@ namespace Espresso
                 IsMenuVisible = true;
                 menuPanel.IsVisible = true;
                 var translateAnimation = menuPanel.TranslateTo(0, 0, 250, Easing.CubicInOut);
+                var rotateIcon = borger.RotateTo(90, 250, Easing.CubicInOut);
                 var heightAnimation = menuPanel.AnimateProperty(height => menuPanel.HeightRequest = height, -200, 200, 250, Easing.CubicInOut);
                 await Task.WhenAll(translateAnimation, heightAnimation);
             }
             else
             {
                 var translateAnimation = menuPanel.TranslateTo(0, -200, 250, Easing.CubicInOut);
+                var rotateIcon = borger.RotateTo(0, 250, Easing.CubicInOut);
                 var heightAnimation = menuPanel.AnimateProperty(height => menuPanel.HeightRequest = height, 200, -200, 250, Easing.CubicInOut);
                 await Task.WhenAll(translateAnimation, heightAnimation);
                 IsMenuVisible = false;

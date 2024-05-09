@@ -13,12 +13,14 @@
 
             <!-- hamburger menu -->
             <Image Source="hamburger.png"
+                   x:Name="borger"
                    Grid.Column="0"
                    WidthRequest="32"
                    HeightRequest="32"
                    HorizontalOptions="Start"
                    VerticalOptions="Center"
-                   Margin="10,10">
+                   Margin="10,10"
+                   Rotation="0">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ToggleMenuCommand}" />
                 </Image.GestureRecognizers>
