@@ -3,50 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Espresso.CustomNavigationBar"
              x:Name="this">
-    <VerticalStackLayout>
-        <ContentView Background="{StaticResource NavBarBackground}">
-            <Grid VerticalOptions="Center">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+    <VerticalStackLayout Spacing="0" Background="{StaticResource NavBarBackground}">
+        <Grid VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
 
-                <!-- hamburger menu -->
-                <Image Source="hamburger.png"
-                       Grid.Column="0"
-                       WidthRequest="32"
-                       HeightRequest="32"
-                       HorizontalOptions="Start"
-                       VerticalOptions="Center"
-                       Margin="10,10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding ToggleMenuCommand}" />
-                    </Image.GestureRecognizers>
-                </Image>
+            <!-- hamburger menu -->
+            <Image Source="hamburger.png"
+                   Grid.Column="0"
+                   WidthRequest="32"
+                   HeightRequest="32"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   Margin="10,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ToggleMenuCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
 
-
-                <!-- profile -->
-                <Image Source="profile.png"
-                       Grid.Column="2"
-                       WidthRequest="32"
-                       HeightRequest="32"
-                       HorizontalOptions="End"
-                       VerticalOptions="Center"
-                       Margin="10,10"/>
-            </Grid>
-        </ContentView>
+            <!-- profile -->
+            <Image Source="profile.png"
+                   Grid.Column="2"
+                   WidthRequest="32"
+                   HeightRequest="32"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   Margin="10,10"/>
+        </Grid>
 
         <!-- actual hamburger menu -->
-        <StackLayout IsVisible="{Binding IsMenuVisible, Source={x:Reference this}}">
-            <Button Text="Create New +" 
-                    Margin="20,5"/>
-            <Button Text="Browse Projects"
-                    Margin="20,5"/>
-            <Button Text="Manage Account"
-                    Margin="20,5"/>
-            <Button Text="Visit GitHub"
-                    Margin="20,5"/>
+        <StackLayout IsVisible="False" x:Name="menuPanel" TranslationY="-200">
+            <Button Text="Create New +" Margin="20,5"/>
+            <Button Text="Browse Projects" Margin="20,5"/>
+            <Button Text="Manage Account" Margin="20,5"/>
+            <Button Text="Visit GitHub" Margin="20,5"/>
         </StackLayout>
     </VerticalStackLayout>
 
