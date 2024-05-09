@@ -6,57 +6,54 @@
              xmlns:viewmodel="clr-namespace:Espresso.ViewModel"
              x:DataType="viewmodel:MainViewModel">
 
-    <VerticalStackLayout>
-        <local:CustomNavigationBar />
 
-        <Grid RowDefinitions="100, Auto, *"
-          ColumnDefinitions=".75*, .25*"
-          Padding="10"
-          RowSpacing="10"
-          ColumnSpacing="10">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-        <Image Grid.ColumnSpan="2"
-               Source="coffee_cup_mascot.png"
-               BackgroundColor="#00FFFFFF"/>
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="1,1,1,0.9"
+                             AbsoluteLayout.LayoutFlags="All"
+                             Margin="0,20,0,0">
 
-        <Entry  Placeholder="Enter task"
-                Grid.Row="1"
-                FontFamily="W95FA"
-                Text="{Binding Text}"/>
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="350" WidthRequest="400">
 
-        <Button Text="Add"
-        Command="{Binding AddCommand}"
-        Grid.Row="1"
-        Grid.Column="1">
-        </Button>
+                <Image Source="coffee_cup_mascot.png"
+                       AbsoluteLayout.LayoutBounds="0,0,1.2,1"
+                       AbsoluteLayout.LayoutFlags="All"
+                       WidthRequest="700"/>
 
-        <CollectionView Grid.Row="2"
-                        Grid.ColumnSpan="2"
-                        ItemsSource="{Binding Items}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="{x:Type x:String}">
-                    <SwipeView>
-                        <SwipeView.RightItems>
-                            <SwipeItems>
-                                <SwipeItem Text="Delete"
-                                           BackgroundColor="Red"
-                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=DeleteCommand}"
-                                           CommandParameter="{Binding .}"/>
-                            </SwipeItems>                            
-                        </SwipeView.RightItems>
-                        <Grid Padding="0,5">
-                            <Frame>
-                                <Label Text="{Binding .}"
-                                       FontSize="24"/>
-                            </Frame>
-                        </Grid>
-                    </SwipeView>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
+                <VerticalStackLayout AbsoluteLayout.LayoutBounds="0,1,0.6,0.6"
+                                AbsoluteLayout.LayoutFlags="All"
+                                WidthRequest="180">
+                    <Label  Text="Welcome!"
+                        FontSize="39"/>
+                    <Label Text="We hope you drank enough coffee today."/>
+                </VerticalStackLayout>
 
-        </CollectionView>
+            </AbsoluteLayout>
+            <Button Text="Browse Projects"
+                HeightRequest="50"
+                MaximumWidthRequest="300"/>
+            <AbsoluteLayout>
+                <Label Text="Copyright 2024 Jack Bittner"
+                   AbsoluteLayout.LayoutBounds="0.2,1,0.5,0.5"
+                   AbsoluteLayout.LayoutFlags="All"/>
+                <Button Text="+"
+                    FontSize="40"
+                    CornerRadius="100"
+                    Padding="10,0,10,10"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    AbsoluteLayout.LayoutBounds="0,90,1.7,1"
+                    AbsoluteLayout.LayoutFlags="All"/>
+            </AbsoluteLayout>
 
-    </Grid>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+
+
+
+        <local:CustomNavigationBar AbsoluteLayout.LayoutBounds="0, 0, 1, -1" 
+                                   AbsoluteLayout.LayoutFlags="WidthProportional"
+                                   HeightRequest="{Binding DynamicHeight}"/>
+
+    </AbsoluteLayout>
 
 </ContentPage>

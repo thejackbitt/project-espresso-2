@@ -12,6 +12,15 @@ namespace Espresso
 
         private bool _isProfileVisible;
 
+        public static readonly BindableProperty DynamicHeightProperty = BindableProperty.Create(nameof(DynamicHeight), typeof(double), typeof(CustomNavigationBar), default(double));
+
+        public double DynamicHeight
+        {
+            get => (double)GetValue(DynamicHeightProperty);
+            set => SetValue(DynamicHeightProperty, value);
+        }
+
+
         public bool IsMenuVisible
         {
             get => _isMenuVisible;
@@ -89,7 +98,7 @@ namespace Espresso
             }
             else
             {
-                var translateAnimation = profilePanel.TranslateTo(0, -200, 150, Easing.CubicInOut);
+                var translateAnimation = profilePanel.TranslateTo(0, -400, 150, Easing.CubicInOut);
                 var heightAnimation = profilePanel.AnimateProperty(height => profilePanel.HeightRequest = height, 200, -200, 350, Easing.CubicInOut);
                 await Task.WhenAll(translateAnimation, heightAnimation);
                 IsProfileVisible = false;

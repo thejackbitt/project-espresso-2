@@ -49,7 +49,7 @@
         </StackLayout>
 
         <!-- actual profile menu -->
-        <StackLayout IsVisible="False" x:Name="profilePanel" TranslationY="-200">
+        <StackLayout IsVisible="False" x:Name="profilePanel" TranslationY="-400">
             <Image Source="profile.png"
                    Margin="20,5"
                    WidthRequest="120"
