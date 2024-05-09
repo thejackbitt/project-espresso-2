@@ -52,7 +52,7 @@
 
         <local:CustomNavigationBar AbsoluteLayout.LayoutBounds="0, 0, 1, -1" 
                                    AbsoluteLayout.LayoutFlags="WidthProportional"
-                                   HeightRequest="{Binding DynamicHeight}"/>
+                                   HeightRequest="{Binding DynamicHeight, Source={x:Reference nameof{CustomNavigationBar}}}"/>
 
     </AbsoluteLayout>
 
