@@ -26,14 +26,18 @@
                 </Image.GestureRecognizers>
             </Image>
 
-            <!-- profile -->
+            <!-- profile menu -->
             <Image Source="profile.png"
                    Grid.Column="2"
                    WidthRequest="32"
                    HeightRequest="32"
                    HorizontalOptions="End"
                    VerticalOptions="Center"
-                   Margin="10,10"/>
+                   Margin="10,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ToggleProfileCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
         </Grid>
 
         <!-- actual hamburger menu -->
@@ -43,6 +47,23 @@
             <Button Text="Manage Account" Margin="20,5"/>
             <Button Text="Visit GitHub" Margin="20,5"/>
         </StackLayout>
+
+        <!-- actual profile menu -->
+        <StackLayout IsVisible="False" x:Name="profilePanel" TranslationY="-200">
+            <Image Source="profile.png"
+                   Margin="20,5"
+                   WidthRequest="120"
+                   HeightRequest="120"/>
+            <Label Text="Foo Fighter"
+                   Margin="20,5"/>
+            <Label Text="foo@bar.com" 
+                   Margin="20,5"/>
+            <Label Text="Enable/Disable Notifications" 
+                   Margin="20,5"/>
+            <Button Text="Sign Out" 
+                   Margin="20,5"/>
+        </StackLayout>
+
     </VerticalStackLayout>
 
     <ContentView.Resources>

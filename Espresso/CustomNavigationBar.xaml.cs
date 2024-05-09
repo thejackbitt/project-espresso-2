@@ -10,6 +10,8 @@ namespace Espresso
     {
         private bool _isMenuVisible;
 
+        private bool _isProfileVisible;
+
         public bool IsMenuVisible
         {
             get => _isMenuVisible;
@@ -23,12 +25,28 @@ namespace Espresso
             }
         }
 
+        public bool IsProfileVisible
+        {
+            get => _isProfileVisible;
+            private set
+            {
+                if (_isProfileVisible != value)
+                {
+                    _isProfileVisible = value;
+                    OnPropertyChanged(nameof(IsProfileVisible));
+                }
+            }
+        }
+
         public ICommand ToggleMenuCommand { get; }
+
+        public ICommand ToggleProfileCommand { get; }
 
         public CustomNavigationBar()
         {
             InitializeComponent();
             ToggleMenuCommand = new Command(ToggleMenu);
+            ToggleProfileCommand = new Command(ToggleProfile);
             BindingContext = this;
         }
 
@@ -36,6 +54,8 @@ namespace Espresso
         {
             if (!IsMenuVisible)
             {
+                IsProfileVisible = false;
+                profilePanel.IsVisible = false;
                 IsMenuVisible = true;
                 menuPanel.IsVisible = true;
                 var translateAnimation = menuPanel.TranslateTo(0, 0, 250, Easing.CubicInOut);
@@ -51,6 +71,26 @@ namespace Espresso
                 await Task.WhenAll(translateAnimation, heightAnimation);
                 IsMenuVisible = false;
                 menuPanel.IsVisible = false;
+            }
+        }
+
+        private async void ToggleProfile()
+        {
+            if (!IsProfileVisible)
+            {
+                IsProfileVisible = true;
+                profilePanel.IsVisible = true;
+                var translateAnimation = profilePanel.TranslateTo(0, 0, 350, Easing.CubicInOut);
+                var heightAnimation = profilePanel.AnimateProperty(height => profilePanel.HeightRequest = height, -200, 300, 150, Easing.CubicInOut);
+                await Task.WhenAll(translateAnimation, heightAnimation);
+            }
+            else
+            {
+                var translateAnimation = profilePanel.TranslateTo(0, -200, 150, Easing.CubicInOut);
+                var heightAnimation = profilePanel.AnimateProperty(height => profilePanel.HeightRequest = height, 200, -200, 350, Easing.CubicInOut);
+                await Task.WhenAll(translateAnimation, heightAnimation);
+                IsProfileVisible = false;
+                profilePanel.IsVisible = false;
             }
         }
 
