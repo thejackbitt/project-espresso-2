@@ -9,17 +9,24 @@ namespace Espresso
     public partial class CustomNavigationBar : ContentView, INotifyPropertyChanged
     {
         private bool _isMenuVisible;
-
         private bool _isProfileVisible;
 
-        public static readonly BindableProperty DynamicHeightProperty = BindableProperty.Create(nameof(DynamicHeight), typeof(double), typeof(CustomNavigationBar), default(double));
+        public static readonly BindableProperty DynamicHeightProperty =
+            BindableProperty.Create(
+                nameof(DynamicHeight),
+                typeof(double),
+                typeof(CustomNavigationBar),
+                50.0);
 
         public double DynamicHeight
         {
             get => (double)GetValue(DynamicHeightProperty);
-            set => SetValue(DynamicHeightProperty, value);
+            set
+            {
+                SetValue(DynamicHeightProperty, value);
+                OnPropertyChanged(nameof(DynamicHeight));
+            }
         }
-
 
         public bool IsMenuVisible
         {
@@ -48,7 +55,6 @@ namespace Espresso
         }
 
         public ICommand ToggleMenuCommand { get; }
-
         public ICommand ToggleProfileCommand { get; }
 
         public CustomNavigationBar()
@@ -69,15 +75,15 @@ namespace Espresso
                 menuPanel.IsVisible = true;
                 var translateAnimation = menuPanel.TranslateTo(0, 0, 250, Easing.CubicInOut);
                 var rotateIcon = borger.RotateTo(90, 250, Easing.CubicInOut);
-                var heightAnimation = menuPanel.AnimateProperty(height => menuPanel.HeightRequest = height, -200, 200, 250, Easing.CubicInOut);
-                await Task.WhenAll(translateAnimation, heightAnimation);
+                var heightAnimation = menuPanel.AnimateProperty(height => DynamicHeight = height, 50, 240, 250, Easing.CubicInOut);
+                await Task.WhenAll(translateAnimation, rotateIcon, heightAnimation);
             }
             else
             {
                 var translateAnimation = menuPanel.TranslateTo(0, -200, 250, Easing.CubicInOut);
                 var rotateIcon = borger.RotateTo(0, 250, Easing.CubicInOut);
-                var heightAnimation = menuPanel.AnimateProperty(height => menuPanel.HeightRequest = height, 200, -200, 250, Easing.CubicInOut);
-                await Task.WhenAll(translateAnimation, heightAnimation);
+                var heightAnimation = menuPanel.AnimateProperty(height => DynamicHeight = height, 240, 50, 250, Easing.CubicInOut);
+                await Task.WhenAll(translateAnimation, rotateIcon, heightAnimation);
                 IsMenuVisible = false;
                 menuPanel.IsVisible = false;
             }
@@ -93,13 +99,13 @@ namespace Espresso
                 IsProfileVisible = true;
                 profilePanel.IsVisible = true;
                 var translateAnimation = profilePanel.TranslateTo(0, 0, 350, Easing.CubicInOut);
-                var heightAnimation = profilePanel.AnimateProperty(height => profilePanel.HeightRequest = height, -200, 340, 150, Easing.CubicInOut);
-                await Task.WhenAll(translateAnimation, heightAnimation);
+                var heightAnimation = profilePanel.AnimateProperty(height => DynamicHeight = height, 50, 360, 200, Easing.CubicInOut);
+                await Task.WhenAll(translateAnimation, rotateIcon, heightAnimation);
             }
             else
             {
                 var translateAnimation = profilePanel.TranslateTo(0, -400, 150, Easing.CubicInOut);
-                var heightAnimation = profilePanel.AnimateProperty(height => profilePanel.HeightRequest = height, 200, -200, 350, Easing.CubicInOut);
+                var heightAnimation = profilePanel.AnimateProperty(height => DynamicHeight = height, 360, 50, 350, Easing.CubicInOut);
                 await Task.WhenAll(translateAnimation, heightAnimation);
                 IsProfileVisible = false;
                 profilePanel.IsVisible = false;

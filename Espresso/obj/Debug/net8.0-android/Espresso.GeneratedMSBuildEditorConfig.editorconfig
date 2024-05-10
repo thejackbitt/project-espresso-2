@@ -28,6 +28,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Espresso.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[F:/Coding_Projects/net_projects/Project_Management/project-espresso-2/Espresso/CustomActionBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Espresso.CustomActionBar.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomActionBar.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomActionBar.xaml
+
 [F:/Coding_Projects/net_projects/Project_Management/project-espresso-2/Espresso/CustomNavigationBar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Espresso.CustomNavigationBar.xaml

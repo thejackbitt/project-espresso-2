@@ -80,7 +80,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="CustomActionBar.xaml.cs">
+	    <DependentUpon>CustomActionBar.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="CustomNavigationBar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CustomActionBar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
