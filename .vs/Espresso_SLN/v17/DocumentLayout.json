@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\customnavigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\customnavigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\customnavigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\customnavigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\customactionbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\customactionbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|f:\\coding_projects\\net_projects\\project_management\\project-espresso-2\\espresso\\espresso.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CD8D4C3D-2757-4151-833F-E8DC59C3AE25}|Espresso\\Espresso.csproj|solutionrelative:espresso\\espresso.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomNavigationBar.xaml.cs",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml.cs",
+              "RelativeDocumentMoniker": "Espresso\\CustomNavigationBar.xaml.cs",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml.cs",
+              "RelativeToolTip": "Espresso\\CustomNavigationBar.xaml.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAswH8AAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:53:39.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomNavigationBar.xaml",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml",
+              "RelativeDocumentMoniker": "Espresso\\CustomNavigationBar.xaml",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomNavigationBar.xaml",
+              "RelativeToolTip": "Espresso\\CustomNavigationBar.xaml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAwwDIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-20T21:49:41.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomActionBar.xaml",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomActionBar.xaml",
+              "RelativeDocumentMoniker": "Espresso\\CustomActionBar.xaml",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\CustomActionBar.xaml",
+              "RelativeToolTip": "Espresso\\CustomActionBar.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-20T21:49:27.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Espresso\\MainPage.xaml",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\MainPage.xaml",
+              "RelativeToolTip": "Espresso\\MainPage.xaml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-20T21:49:20.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Espresso",
+              "DocumentMoniker": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Espresso.csproj",
+              "RelativeDocumentMoniker": "Espresso\\Espresso.csproj",
+              "ToolTip": "F:\\Coding_Projects\\net_projects\\Project_Management\\project-espresso-2\\Espresso\\Espresso.csproj",
+              "RelativeToolTip": "Espresso\\Espresso.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-20T21:48:40.423Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

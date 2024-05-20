@@ -112,6 +112,17 @@ namespace Espresso
             }
         }
 
+        private async void RedirectLink(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            var url = button?.CommandParameter as string;
+
+            if (!string.IsNullOrEmpty(url))
+            {
+                await Launcher.OpenAsync(new Uri(url));
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
