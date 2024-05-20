@@ -42,10 +42,14 @@
 
         <!-- actual hamburger menu -->
         <StackLayout IsVisible="False" x:Name="menuPanel" TranslationY="-200">
-            <Button Text="Create New +" Margin="20,5"/>
-            <Button Text="Browse Projects" Margin="20,5"/>
-            <Button Text="Manage Account" Margin="20,5"/>
-            <Button Text="Visit GitHub" Margin="20,5"/>
+            <Button Text="Create New +" Margin="20,5"></Button>
+            <Button Text="Browse Projects" Margin="20,5"></Button>
+            <Button Text="Manage Account" Margin="20,5"></Button>
+            <Button Text="Visit GitHub" 
+                    Margin="20,5" 
+                    Clicked="RouteLink" 
+                    CommandParameter="https://github.com/thejackbitt/project-espresso-2">
+            </Button>
         </StackLayout>
 
         <!-- actual profile menu -->

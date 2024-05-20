@@ -89,6 +89,17 @@ namespace Espresso
             }
         }
 
+        private async void RouteLink(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            var url = button?.CommandParameter as string;
+
+            if (!string.IsNullOrEmpty(url))
+            {
+                await Launcher.OpenAsync(new Uri(url));
+            }
+        }
+
         private async void ToggleProfile()
         {
             if (!IsProfileVisible)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Espresso")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+112dbe5e24c3095f0e0327e3dbe31ac08ac4c602")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e4520c89988a1a2513545994b817b08638889f7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Espresso")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Espresso")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
