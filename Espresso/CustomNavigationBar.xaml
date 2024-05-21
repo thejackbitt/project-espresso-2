@@ -45,7 +45,8 @@
             <Button Text="Create New +" 
                     Margin="20,5"/>
             <Button Text="Browse Projects" 
-                    Margin="20,5"/>
+                    Margin="20,5"
+                    Clicked="OpenLoader"/>
             <Button Text="Manage Account" 
                     Margin="20,5"
                     Command="{Binding ToggleProfileCommand}"/>

@@ -11,6 +11,13 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
         </Grid>
+
+        <!-- actual loader menu -->
+        <StackLayout IsVisible="False" x:Name="loaderPanel" TranslationY="-200">
+            <Button Text="Load File" 
+                    Margin="20,5"/>
+        </StackLayout>
+
     </VerticalStackLayout>
 
     <ContentView.Resources>

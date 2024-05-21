@@ -112,6 +112,22 @@ namespace Espresso
             }
         }
 
+        public async void KillTop()
+        {
+            if (IsMenuVisible)
+            {
+                var rotateIcon = borger.RotateTo(0, 250, Easing.CubicInOut);
+                IsMenuVisible = false;
+                menuPanel.IsVisible = false;
+            }
+
+            if (IsProfileVisible)
+            {
+                IsProfileVisible = false;
+                profilePanel.IsVisible = false;
+            }
+        }
+
         private async void RedirectLink(object sender, EventArgs e)
         {
             var button = sender as Button;
@@ -121,6 +137,29 @@ namespace Espresso
             {
                 await Launcher.OpenAsync(new Uri(url));
             }
+        }
+
+        private async void OpenLoader(object sender, EventArgs e)
+        {
+            var parent = this.Parent;
+            System.Diagnostics.Debug.WriteLine($"Parent is {parent.GetType().Name}");
+
+            while (parent != null)
+            {
+                if (parent is AbsoluteLayout stackLayout)
+                {
+                    var customActBar = stackLayout.FindByName<CustomActionBar>("CustomActBar");
+                    if (customActBar != null)
+                    {
+                        System.Diagnostics.Debug.WriteLine("CustomActionBar WAS found in the parent hierarchy.");
+                        customActBar.ToggleLoader();
+                        return;
+                    }
+                } 
+                parent = (parent as Element)?.Parent;
+            }
+
+            System.Diagnostics.Debug.WriteLine("CustomActionBar not found in the parent hierarchy.");
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

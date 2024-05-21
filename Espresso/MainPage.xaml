@@ -55,7 +55,8 @@
                            AbsoluteLayout.LayoutFlags="WidthProportional"
                            HeightRequest="{Binding DynamicHeight, Source={x:Reference CustomNavBarName}}"/>
 
-        <local:CustomActionBar AbsoluteLayout.LayoutBounds="0,1,1,1"
+        <local:CustomActionBar x:Name="CustomActBar"
+                               AbsoluteLayout.LayoutBounds="0,1,1,1"
                                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
                                HeightRequest="60"/>
 
