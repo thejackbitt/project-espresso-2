@@ -55,11 +55,22 @@
                            AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
                            HeightRequest="{Binding DynamicHeight, Source={x:Reference CustomNavBarName}}"/>
 
-        <local:CustomActionBar x:Name="CustomActBarName"
+        <AbsoluteLayout x:Name="FocusedArea" 
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1"
+                        AbsoluteLayout.LayoutFlags="All"
+                        InputTransparent="{Binding DynamicInputTransparency, Source={x:Reference CustomActBarName}}">
+            <AbsoluteLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding KillBottomCommand, Source={x:Reference CustomActBarName}}" />
+            </AbsoluteLayout.GestureRecognizers>
+        </AbsoluteLayout>
+
+
+    <local:CustomActionBar x:Name="CustomActBarName"
                                AbsoluteLayout.LayoutBounds="0,1,1,1"
                                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
                                HeightRequest="{Binding DynamicHeight_bottom, Source={x:Reference CustomActBarName}}"/>
-
     </AbsoluteLayout>
 
 </ContentPage>

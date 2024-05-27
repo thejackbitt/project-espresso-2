@@ -148,7 +148,7 @@ namespace Espresso
         private async void OpenLoader(object sender, EventArgs e)
         {
             var parent = this.Parent;
-            System.Diagnostics.Debug.WriteLine($"Parent is {parent.GetType().Name}");
+            // System.Diagnostics.Debug.WriteLine($"Parent is {parent.GetType().Name}");
 
             KillTop();
 
@@ -159,7 +159,7 @@ namespace Espresso
                     var customActBar = stackLayout.FindByName<CustomActionBar>("CustomActBarName");
                     if (customActBar != null)
                     {
-                        System.Diagnostics.Debug.WriteLine("CustomActionBar WAS found in the parent hierarchy.");
+                        // System.Diagnostics.Debug.WriteLine("CustomActionBar WAS found in the parent hierarchy.");
                         customActBar.ToggleLoader();
                         return;
                     }
@@ -167,7 +167,7 @@ namespace Espresso
                 parent = (parent as Element)?.Parent;
             }
 
-            System.Diagnostics.Debug.WriteLine("CustomActionBar was not found in the parent hierarchy.");
+            // System.Diagnostics.Debug.WriteLine("CustomActionBar was not found in the parent hierarchy.");
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

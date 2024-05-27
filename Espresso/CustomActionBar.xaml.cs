@@ -16,6 +16,7 @@ public partial class CustomActionBar : ContentView, INotifyPropertyChanged
                 typeof(double),
                 typeof(CustomActionBar),
                 50.0);
+
     public double DynamicHeight_bottom
     {
         get => (double)GetValue(DynamicHeightProperty_bottom);
@@ -25,6 +26,24 @@ public partial class CustomActionBar : ContentView, INotifyPropertyChanged
             OnPropertyChanged(nameof(DynamicHeight_bottom));
         }
     }
+
+    public static readonly BindableProperty DynamicInputTransparencyProperty =
+        BindableProperty.Create(
+            nameof(DynamicInputTransparency),
+            typeof(bool),
+            typeof(CustomActionBar),
+            true);
+
+    public bool DynamicInputTransparency
+    {
+        get => (bool)GetValue(DynamicInputTransparencyProperty);
+        set
+        {
+            SetValue(DynamicInputTransparencyProperty, value);
+            OnPropertyChanged(nameof(DynamicInputTransparency));
+        }
+    }
+
 
     public bool IsLoaderVisible
     {
@@ -41,31 +60,32 @@ public partial class CustomActionBar : ContentView, INotifyPropertyChanged
 
     public ICommand ToggleLoaderCommand { get; }
 
+    public ICommand KillBottomCommand { get; }
+
     public CustomActionBar()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         ToggleLoaderCommand = new Command(ToggleLoader);
+        KillBottomCommand = new Command(KillBottom);
         BindingContext = this;
-	}
+    }
+
     public async void ToggleLoader()
     {
         if (!IsLoaderVisible)
         {
+            DynamicInputTransparency = false;
             IsLoaderVisible = true;
             loaderPanel.IsVisible = true;
             var translateAnimation = loaderPanel.TranslateTo(0, 25, 350, Easing.CubicInOut);
             var heightAnimation = loaderPanel.AnimateProperty(height => DynamicHeight_bottom = height, 50, 800, 200, Easing.CubicInOut);
-            System.Diagnostics.Debug.WriteLine($"Height is now {DynamicHeight_bottom}");
+            // System.Diagnostics.Debug.WriteLine($"Height is now {DynamicHeight_bottom}");
             await Task.WhenAll(translateAnimation, heightAnimation);
         }
         else
         {
-            var translateAnimation = loaderPanel.TranslateTo(0, 200, 150, Easing.CubicInOut);
-            var heightAnimation = loaderPanel.AnimateProperty(height => DynamicHeight_bottom = height, 800, 50, 350, Easing.CubicInOut);
-            System.Diagnostics.Debug.WriteLine($"Height is now {DynamicHeight_bottom}");
-            await Task.WhenAll(translateAnimation, heightAnimation);
-            IsLoaderVisible = false;
-            loaderPanel.IsVisible = false;
+            DynamicInputTransparency = true;
+            await CloseLoader();
         }
     }
 
@@ -73,12 +93,19 @@ public partial class CustomActionBar : ContentView, INotifyPropertyChanged
     {
         if (IsLoaderVisible)
         {
-            IsLoaderVisible = false;
-            loaderPanel.IsVisible = false;
-            var translateAnimation = loaderPanel.TranslateTo(0, -400, 150, Easing.CubicInOut);
-            var heightAnimation = loaderPanel.AnimateProperty(height => DynamicHeight_bottom = height, 360, 50, 350, Easing.CubicInOut);
-            await Task.WhenAll(translateAnimation, heightAnimation);
+            DynamicInputTransparency = true;
+            await CloseLoader();
         }
+    }
+
+    private async Task CloseLoader()
+    {
+        var translateAnimation = loaderPanel.TranslateTo(0, 200, 150, Easing.CubicInOut);
+        var heightAnimation = loaderPanel.AnimateProperty(height => DynamicHeight_bottom = height, 800, 50, 350, Easing.CubicInOut);
+        // System.Diagnostics.Debug.WriteLine($"Height is now {DynamicHeight_bottom}");
+        await Task.WhenAll(translateAnimation, heightAnimation);
+        IsLoaderVisible = false;
+        loaderPanel.IsVisible = false;
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
