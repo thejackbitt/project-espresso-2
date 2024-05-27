@@ -116,13 +116,19 @@ namespace Espresso
         {
             if (IsMenuVisible)
             {
+                var translateAnimation = menuPanel.TranslateTo(0, -200, 250, Easing.CubicInOut);
                 var rotateIcon = borger.RotateTo(0, 250, Easing.CubicInOut);
+                var heightAnimation = menuPanel.AnimateProperty(height => DynamicHeight = height, 240, 50, 250, Easing.CubicInOut);
+                await Task.WhenAll(translateAnimation, rotateIcon, heightAnimation);
                 IsMenuVisible = false;
                 menuPanel.IsVisible = false;
             }
 
             if (IsProfileVisible)
             {
+                var translateAnimation = profilePanel.TranslateTo(0, -400, 150, Easing.CubicInOut);
+                var heightAnimation = profilePanel.AnimateProperty(height => DynamicHeight = height, 360, 50, 350, Easing.CubicInOut);
+                await Task.WhenAll(translateAnimation, heightAnimation);
                 IsProfileVisible = false;
                 profilePanel.IsVisible = false;
             }
@@ -144,11 +150,13 @@ namespace Espresso
             var parent = this.Parent;
             System.Diagnostics.Debug.WriteLine($"Parent is {parent.GetType().Name}");
 
+            KillTop();
+
             while (parent != null)
             {
                 if (parent is AbsoluteLayout stackLayout)
                 {
-                    var customActBar = stackLayout.FindByName<CustomActionBar>("CustomActBar");
+                    var customActBar = stackLayout.FindByName<CustomActionBar>("CustomActBarName");
                     if (customActBar != null)
                     {
                         System.Diagnostics.Debug.WriteLine("CustomActionBar WAS found in the parent hierarchy.");
@@ -159,7 +167,7 @@ namespace Espresso
                 parent = (parent as Element)?.Parent;
             }
 
-            System.Diagnostics.Debug.WriteLine("CustomActionBar not found in the parent hierarchy.");
+            System.Diagnostics.Debug.WriteLine("CustomActionBar was not found in the parent hierarchy.");
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
