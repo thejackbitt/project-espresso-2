@@ -31,7 +31,8 @@
             </AbsoluteLayout>
             <Button Text="Browse Projects"
                 HeightRequest="50"
-                MaximumWidthRequest="300"/>
+                MaximumWidthRequest="300"
+                Command="{Binding ActionBarCommand, Source={x:Reference CustomActBarName}}"/>
             <AbsoluteLayout>
                 <Label Text="Copyright 2024 Jack Bittner"
                    AbsoluteLayout.LayoutBounds="0.2,1,0.5,0.5"
@@ -57,8 +58,7 @@
 
     <local:CustomActionBar x:Name="CustomActBarName"
                            AbsoluteLayout.LayoutBounds="0,1,1,1"
-                           AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
-                           HeightRequest="{Binding DynamicHeight_bottom, Source={x:Reference CustomActBarName}}"/>
+                           AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
     </AbsoluteLayout>
 
 </ContentPage>
