@@ -9,10 +9,6 @@
 
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-        <AbsoluteLayout.GestureRecognizers>
-            <TapGestureRecognizer Command="{Binding KillBottomCommand, Source={x:Reference CustomActBarName}}" />
-        </AbsoluteLayout.GestureRecognizers>
-
         <VerticalStackLayout AbsoluteLayout.LayoutBounds="1,1,1,0.9"
                              AbsoluteLayout.LayoutFlags="All"
                              Margin="0,20,0,0">

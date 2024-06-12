@@ -145,31 +145,6 @@ namespace Espresso
             }
         }
 
-        private async void OpenLoader(object sender, EventArgs e)
-        {
-            var parent = this.Parent;
-            // System.Diagnostics.Debug.WriteLine($"Parent is {parent.GetType().Name}");
-
-            KillTop();
-
-            while (parent != null)
-            {
-                if (parent is AbsoluteLayout stackLayout)
-                {
-                    var customActBar = stackLayout.FindByName<CustomActionBar>("CustomActBarName");
-                    if (customActBar != null)
-                    {
-                        // System.Diagnostics.Debug.WriteLine("CustomActionBar WAS found in the parent hierarchy.");
-                        customActBar.ToggleLoader();
-                        return;
-                    }
-                } 
-                parent = (parent as Element)?.Parent;
-            }
-
-            // System.Diagnostics.Debug.WriteLine("CustomActionBar was not found in the parent hierarchy.");
-        }
-
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

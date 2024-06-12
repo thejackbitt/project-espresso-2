@@ -13,7 +13,7 @@
         </Grid>
 
         <!-- actual loader menu -->
-        <StackLayout IsVisible="False" x:Name="loaderPanel" TranslationY="-200">
+        <StackLayout IsVisible="False" x:Name="loaderPanel" TranslationY="50">
             <Button Text="Load File" 
                     Margin="20,5"/>
         </StackLayout>
